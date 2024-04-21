@@ -7,6 +7,8 @@ RUN rm /etc/nginx/conf.d/default.conf
 # Copy custom configuration files from the host to the container
 COPY nginx.conf /etc/nginx/nginx.conf
 COPY yoursite.conf /etc/nginx/conf.d/
+# Copy the content of the 'html' directory (including index.html) from your project folder to the container
+COPY webroot/ /usr/share/nginx/html/
 
 # Expose both port 80 and 443 to the host so that NGINX can receive HTTP and HTTPS requests
 EXPOSE 80 443
