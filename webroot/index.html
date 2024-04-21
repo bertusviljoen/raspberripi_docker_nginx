@@ -10,14 +10,14 @@
             line-height: 1.6;
             margin: 0;
             padding: 20px;
-            background-color: #f4f4f4;
+            background-color: #f7f7f7; /* lightened background color */
             color: #333;
         }
         .container {
             max-width: 800px;
-            margin: 0 auto;
+            margin: 40px auto; /* added margin top and bottom */
             background: white;
-            padding: 20px;
+            padding: 30px; /* increased padding for a cleaner look */
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
         h1, h2 {
@@ -28,9 +28,16 @@
         }
         footer {
             text-align: center;
-            margin-top: 20px;
+            margin-top: 40px; /* added margin top */
             font-size: 0.8em;
             color: #666;
+        }
+        /* added styles for image centering */
+        .header-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px; /* added margin bottom */
         }
     </style>
 </head>
@@ -38,7 +45,9 @@
     <div class="container">
         <h1>Ontmoet Frikkie!</h1>
         <h2>Jou Persoonlike AI Helper, Binnekort Beskikbaar</h2>
-        <img src="images/frikkie_landing.png" alt="Frikkie Logo" style="float: right;">
+        <div class="header-image">
+            <img src="images/frikkie_landing.png" alt="Frikkie Logo" style="width: 50%;">
+        </div>
         <p>Welkom by ons opwindende nuwe projek! Ons is tans in die proses van die ontwikkeling van Frikkie, 'n vriendelike en behulpsame AI bot wat ontwerp is om jou daaglikse take makliker te maak. Frikkie is nog onder konstruksie, maar ons harde werk agter die skerms beteken dat hy binnekort gereed sal wees om jou te ontmoet.</p>
         <p>Bly ingeskakel en gereed om Frikkie binnekort te verwelkom!</p>
         <footer>
