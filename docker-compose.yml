@@ -13,7 +13,7 @@ services:
         target: /etc/letsencrypt/live/aifrikkie.ddns.net/privkey.pem
         mode: 0444
 configs:
-  site_ssl_cert:
+  aifrikkie_ssl_cert:
     external: true
-  site_ssl_key:
+  aifrikkie_ssl_cert:
     external: true
