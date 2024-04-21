@@ -15,5 +15,5 @@ services:
 configs:
   aifrikkie_ssl_cert:
     external: true
-  aifrikkie_ssl_cert:
+  aifrikkie_ssl_key:
     external: true
