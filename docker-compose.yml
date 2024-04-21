@@ -1,0 +1,19 @@
+version: '3.8'
+services:
+  web:
+    image: aifrikkie-image
+    ports:
+      - "80:80"
+      - "443:443"
+    configs:
+      - source: aifrikkie_ssl_cert
+        target: /etc/letsencrypt/live/aifrikkie.ddns.net/fullchain.pem
+        mode: 0444
+      - source: aifrikkie_ssl_key
+        target: /etc/letsencrypt/live/aifrikkie.ddns.net/privkey.pem
+        mode: 0444
+configs:
+  site_ssl_cert:
+    external: true
+  site_ssl_key:
+    external: true
