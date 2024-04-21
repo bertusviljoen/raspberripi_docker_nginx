@@ -1,7 +1,7 @@
 version: '3.8'
 services:
   web:
-    image: aifrikkie-image
+    image: aifrikkie
     ports:
       - "80:80"
       - "443:443"
